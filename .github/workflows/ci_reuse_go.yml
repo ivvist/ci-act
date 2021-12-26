@@ -30,13 +30,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-go-
 
-    - name: CI
-      uses: untillpro/ci-action@master
-      with:
-        organization: 'untillpro, heeus'
-        token: ${{ secrets.reporeading_token }}
-        codecov-token: ${{ secrets.codecov_token }}
-
     - name: Rebuild airs-bp3
       run: curl -s https://raw.githubusercontent.com/untillpro/ci-action/master/scripts/rebuild-test-bp3.sh | bash
       env: 
