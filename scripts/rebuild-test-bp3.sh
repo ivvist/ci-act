@@ -43,5 +43,3 @@ else
     echo "Push new version of $reponame to git"
   fi
 fi
-
-echo "gh_repo: $gh_repo"
