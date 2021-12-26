@@ -45,6 +45,7 @@ else
 fi
 
 cd ..
+
 echo "Dir1:"
 ls -1 -d "$PWD/"*
 
