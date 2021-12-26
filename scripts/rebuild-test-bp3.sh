@@ -46,5 +46,6 @@ fi
 
 cd ..
 echo "Dir:"
-ls
+ls -1 -d "$PWD/"*
+
 
