@@ -55,3 +55,4 @@ ls -1 -d "$PWD/"*
 cd ../../..
 echo "Dir3:"
 ls -1 -d "$PWD/"*
+	
