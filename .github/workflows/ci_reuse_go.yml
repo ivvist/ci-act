@@ -38,11 +38,12 @@ jobs:
         codecov-token: ${{ secrets.codecov_token }}
 
     - name: Rebuild airs-bp3
-      run: curl -s https://raw.githubusercontent.com/ivvist/ci-act/main/scripts/rebuild-test-bp3.sh | bash
+      run: |
+        curl -s https://raw.githubusercontent.com/ivvist/ci-act/main/scripts/rebuild-test-bp3.sh | bash
+        echo "GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}"
       env: 
         github_token: ${{ secrets.reporeading_token }}
         gh_event: ${{ github.event_name }}
-        gh_repo: ${{ GITHUB_REPOSITORY }}
 
     - name: Push changes to pb3
       if: github.event_name == 'push'
