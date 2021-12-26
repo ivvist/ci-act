@@ -48,4 +48,10 @@ cd ..
 echo "Dir1:"
 ls -1 -d "$PWD/"*
 
+cd ../..
+echo "Dir2:"
+ls -1 -d "$PWD/"*
 
+cd ../../..
+echo "Dir3:"
+ls -1 -d "$PWD/"*
